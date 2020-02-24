@@ -15,6 +15,12 @@ public:
     explicit addingflights(QWidget *parent = nullptr);
     ~addingflights();
 
+signals:
+    void firstWindow();
+
+private slots:
+    void on_btnComeBack_clicked();
+
 private:
     Ui::addingflights *ui;
 };

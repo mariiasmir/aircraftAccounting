@@ -12,3 +12,9 @@ addingflights::~addingflights()
 {
     delete ui;
 }
+
+void addingflights::on_btnComeBack_clicked()
+{
+    this->close();
+    emit firstWindow();
+}
